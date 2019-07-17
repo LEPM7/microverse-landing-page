@@ -1,26 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>@media screen and (max-width: 600px) {
+    #video-section {
+        margin-top: 150px;
+    }
+    #nav-bar a {
+        float: none;
+        width: 100%;
+    }
+    }
+  
+    header {
+      position: fixed;
+      top: 0;
+      padding: 0px 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #eee;
+    }
+  </style>
+</head>
 
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
-    <script  src="js/index.js"></script>
-  </body>
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="js/index.js"></script>
+  <div id="wrapper">
+    <header id="header">
+      <img width="50px" height="50px" id="header-img"
+        src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/4847/s300/new-icon.png">
+      <nav id="nav-bar">
+        <a class="nav-link" href="#header">
+          Microverse Home
+        </a>
+        <a class="nav-link" href="#video-section">
+          Microverse Curriculum
+        </a>
+        <a class="nav-link" href="#form-section">
+          Microverse Employers
+        </a>
+      </nav>
+    </header>
+    <section id="video-section">
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/2PW4uKpnCWI" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </section>
+    <section id="form-section">
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Email" name="email" required> <br />
+        <input type="submit" id="submit" value="Submit">
+      </form>
+    </section>
+  </div>
+</body>
 </html>
