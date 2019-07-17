@@ -1,0 +1,27 @@
+#wrapper {
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+  }
+
+#video-section {
+    margin-top: 75px;
+}
+
+#nav-bar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
